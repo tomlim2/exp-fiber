@@ -3,7 +3,9 @@ import Main from "./pages/Main"
 
 const App = () => (
     <div>
-        <Main/>
+        <Main>
+            <h1>MainPage</h1>
+        </Main>
     </div>
     )
 
