@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom"
-import Main from "../pages/Main"
 import DefaultLayout from "../layout/DefaultLayout"
-import FramerDriven from "../pages/FramerDriven"
+import Main from "../pages/Main"
+import R42 from "../pages/Fiber/R42"
 
 export const router = createBrowserRouter([{
     path:"/", 
@@ -11,9 +11,12 @@ export const router = createBrowserRouter([{
         element: <Main/>
     },
     {
-        path:"/framer-driven", 
-        element: <FramerDriven/>
-    }]
+        path:"fiber", 
+        children:[{
+            path:"",
+            element: <R42/>
+        }]
+    },]
     },
     
 ])

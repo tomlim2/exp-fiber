@@ -1,0 +1,21 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 5px;
+    z-index: 9999;
+
+    .navigation{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+
+        .menu{
+            a {
+                color: #fff;
+                font-size: .75rem;
+            }
+        }
+    }   
+}
