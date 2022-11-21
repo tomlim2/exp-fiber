@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import LinkText from "./text/LinkText";
 
 import 'style/components/Footer.scss'
 
@@ -6,9 +6,9 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className="infos">
-                <div className="info main"><Link to={"/"}>Copyright, Tom Lim. All rights reserved.</Link></div>
-                <div className="info fiber"><Link to={"/fiber"}>tomandlim@gmail.com</Link> </div>
-                <div className="info about"><Link to={"/about"}>Seoul, South Korea</Link> </div>
+                <div className="info main">Copyright, Tom Lim. All rights reserved</div>
+                <div className="info fiber"><LinkText navigateTo={"tomandlim@gmail.com"} linkType='email'>tomandlim@gmail.com</LinkText> </div>
+                <div className="info about">Seoul, South Korea</div>
             </div>
         </div>
     )

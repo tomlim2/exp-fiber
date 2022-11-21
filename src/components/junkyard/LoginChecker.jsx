@@ -1,7 +1,7 @@
 import { useRecoilState, useRecoilValue } from 'recoil'
 import { userInfoAtom, isLoginState } from 'store/userStore'
 
-import Text from 'components/text/Text'
+import DataText from 'components/text/DataText'
 
 const LoginChecker = () => {
 
@@ -11,8 +11,8 @@ const LoginChecker = () => {
     return (
         <>
             <div>
-                <div>email: <Text text={userInfo && userInfo.email} /></div>
-                <div>isLogin: <Text text={String(isLogin)} /></div>
+                <div>email: <DataText text={userInfo && userInfo.email} /></div>
+                <div>isLogin: <DataText text={String(isLogin)} /></div>
             </div>
         </>)
 }
