@@ -1,0 +1,16 @@
+.page.fiber { 
+    display: flex;
+    flex-direction: column;
+
+    .section {
+        &.a{
+            background-color: #252525;
+        }
+        &.b{
+            background-color: #111;
+        }
+        &.c{
+            background-color: #444;
+        }
+    }
+}

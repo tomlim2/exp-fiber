@@ -1,0 +1,13 @@
+.section.fiber {
+    .content{
+        width: 100vw;
+        height: 100vh;
+        padding: 28px 4px;   
+        background-color: #444;
+        transition: background-color 400ms ease-in-out;
+
+        &.init {
+            background-color: #252525;
+        }
+    }
+}

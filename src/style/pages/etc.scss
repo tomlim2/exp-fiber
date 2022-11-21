@@ -1,0 +1,14 @@
+.page.etc { 
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 32px;
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    button{
+        margin-top: 4px;
+    }
+}

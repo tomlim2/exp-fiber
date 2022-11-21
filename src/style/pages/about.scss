@@ -1,0 +1,21 @@
+.page.about { 
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    section{
+        padding: 4px;
+
+        &.profile{
+            margin-top: 48px;
+        }
+
+        p{
+            line-height: 1.25rem;
+        }
+
+        &.tech{
+            margin-top: 24px;
+        }
+    }
+}

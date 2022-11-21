@@ -1,0 +1,13 @@
+.page.main { 
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .section{
+        padding: 2px 4px;
+    }
+}

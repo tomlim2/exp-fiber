@@ -1,0 +1,12 @@
+.button.link{
+    border: #aaa solid 2px;
+    color: #aaa;
+    background-color: inherit;
+    padding: 8px 16px;
+    cursor: pointer;
+
+    &:hover{
+        color: #fff;
+        border: #fff solid 2px;
+    }
+}

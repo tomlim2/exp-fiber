@@ -3,12 +3,12 @@
     top: 0;
     left: 0;
     width: 100vw;
-    padding: 5px;
+    padding: 4px;
     z-index: 9999;
 
     .navigation{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         width: 100%;
 
         .menu{
