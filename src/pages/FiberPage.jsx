@@ -7,8 +7,8 @@ const FiberPage = () =>{
     return (
         <div className="page fiber">
             <R42/>
-            <EmptySection backgroundColor='#000' sectionIndex={1} />
-            <EmptySection backgroundColor='#222' sectionIndex={2} />
+            <EmptySection />
+            <EmptySection />
             {/* <EmptySection backgroundColor='#444' /> */}
         </div>
     )

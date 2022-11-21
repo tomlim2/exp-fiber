@@ -1,8 +1,8 @@
-.button.link{
+button.link{
     border: #aaa solid 2px;
     color: #aaa;
     background-color: inherit;
-    padding: 8px 16px;
+    padding: 0;
     cursor: pointer;
 
     &:hover{
@@ -11,6 +11,16 @@
     }
 }
 
-.button.icon{
+button.icon{
     cursor: pointer;
+    background-color: inherit;
+    padding: 0;
+
+    svg{
+        transition: 150ms ease-in-out fill;
+        
+        &:hover{
+            fill: #aaa !important;
+        }
+    }
 }

@@ -6,6 +6,7 @@ import { useModel } from "model";
 import Clicker from "components/Clicker";
 import People from "components/People";
 import LoginChecker from "components/junkyard/LoginChecker";
+import IconsSection from "sections/etc/IconsSection";
 
 import "style/pages/etc.scss";
 
@@ -61,6 +62,10 @@ const EtcPage = () => {
 
     return (
         <div className="page etc">
+            <section className="section">
+                <h2>icons</h2>
+                <IconsSection />
+            </section>
             <section className="section">
                 <h2>LoginChecker</h2>
                 <LoginChecker />
