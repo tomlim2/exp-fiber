@@ -7,6 +7,7 @@ import Clicker from "components/Clicker";
 import People from "components/People";
 import LoginChecker from "components/junkyard/LoginChecker";
 import IconsSection from "sections/etc/IconsSection";
+import BasicButton from 'components/button/BasicButton'
 
 import "style/pages/etc.scss";
 
@@ -72,14 +73,14 @@ const EtcPage = () => {
             </section>
             <section className="section">
                 <h2>model Test</h2>
-                <button onClick={() => onClick('googleLogin')}>Google Login</button>
+                <BasicButton onClick={() => onClick('googleLogin')}>Google Login</BasicButton>
                 <br />
-                <button onClick={() => onClick('logOut')}>logout</button>
+                <BasicButton onClick={() => onClick('logOut')}>logout</BasicButton>
             </section>
             <section className="section">
                 <h2>totalCount: {totalCount}</h2>
 
-                <button onClick={toggleClickerClick}>{hasClicker ? 'Hide' : 'Show'} Clicker</button>
+                <BasicButton onClick={toggleClickerClick}>{hasClicker ? 'Hide' : 'Show'} Clicker</BasicButton>
                 {hasClicker && tempArray().map((value, index) => <Clicker key={index} increment={increment} keyName={`count${index}`} backgroundColor={hslRandomColor[index]} />)
                 }
             </section>

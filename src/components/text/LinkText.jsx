@@ -8,8 +8,6 @@ const LinkText = ({linkUrl, linkType = 'internal', children}) => {
         email: <a className="text link" href={`mailto:${linkUrl}`}>{children}</a>
     }
 
-    console.log(linkTypes[linkType], linkType);
-
     return linkTypes[linkType]
 }
 

@@ -1,8 +1,19 @@
+button.basic{
+    color: #aaa;
+    background-color: #000;
+    padding: 8px 12px;
+    cursor: pointer;
+
+    &:hover{
+        color: #fff;
+    }
+}
+
 button.link{
     border: #aaa solid 2px;
     color: #aaa;
     background-color: inherit;
-    padding: 0;
+    padding: 4px 8px;
     cursor: pointer;
 
     &:hover{
@@ -18,7 +29,7 @@ button.icon{
 
     svg{
         transition: 150ms ease-in-out fill;
-        
+
         &:hover{
             fill: #aaa !important;
         }
