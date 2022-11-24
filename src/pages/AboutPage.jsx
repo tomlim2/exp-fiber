@@ -1,6 +1,5 @@
-import { useNavigate } from "react-router-dom";
-import LinkButton from "components/button/LinkButton"
 import IconButton from "components/button/IconButton"
+
 import "style/pages/about.scss";
 
 const AboutPage = () => {

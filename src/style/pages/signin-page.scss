@@ -1,0 +1,10 @@
+.page.music { 
+    display: flex;
+    flex-direction: column;
+
+    section {
+        &.login{
+            margin-top: 24px;
+        }
+    }
+}

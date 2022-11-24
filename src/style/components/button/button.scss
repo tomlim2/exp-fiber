@@ -4,6 +4,11 @@ button.basic{
     padding: 8px 12px;
     cursor: pointer;
 
+    &:disabled{
+        pointer-events: none;
+        opacity: .5;
+    }
+
     &:hover{
         color: #fff;
     }

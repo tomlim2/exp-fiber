@@ -11,7 +11,10 @@ const MainPage = () => {
     return (
         <div className="page main">
             <section className="hero">
-                
+            
+            </section>
+            <section className="section">
+                <LinkButton onClick={()=>navigateTo('music')}>Music</LinkButton>
             </section>
             <section className="section">
                 <LinkButton onClick={()=>navigateTo('etc')}>Etc</LinkButton>

@@ -1,19 +1,16 @@
 import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
+import { useModel } from "model";
 
 import { userInfoAtom } from 'store/userStore'
-import { isSpotifyLoginAtom } from 'store/spotifyStore'
-import { useSetRecoilState } from 'recoil'
+import { useRecoilState } from 'recoil'
 import { auth } from "firebase.js";
 
 import Header from "components/Header";
 import Footer from "components/Footer";
 
-const key = 'spotify/accessToken'
-
 const DefaultLayout = () => {
-    const setUserInfo = useSetRecoilState(userInfoAtom)
-    const setIsSpotifyLogin = useSetRecoilState(isSpotifyLoginAtom)
+    const [userInfo, setUserInfo] = useRecoilState(userInfoAtom)
 
     const getUserInfo = async () => {
         auth.onAuthStateChanged(function (user) {
@@ -23,23 +20,13 @@ const DefaultLayout = () => {
 
             } else {
                 setUserInfo(undefined)
-
+                
             }
         });
     }
 
-    const checkSpotify = () => {
-        const hasToken = Boolean(window.localStorage.getItem(key));
-        if (hasToken) {
-            setIsSpotifyLogin(true)
-        } else {
-            setIsSpotifyLogin(false)
-        }
-    }
-
     useEffect(() => {
         getUserInfo()
-        checkSpotify()
     }, [])
 
     return (

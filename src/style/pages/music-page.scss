@@ -1,0 +1,14 @@
+.page.music { 
+    display: flex;
+    flex-direction: column;
+
+    section {
+        &.login{
+            margin-top: 24px;
+        }
+    }
+}
+
+section.stotify-login-status{
+    padding-top: 48px;   
+}
