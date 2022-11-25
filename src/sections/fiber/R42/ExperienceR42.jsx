@@ -30,17 +30,17 @@ const ExperienceR42 = () => {
             <group ref={groupRef}>
                 <mesh position-x={-2}>
                     <sphereGeometry />
-                    <meshStandardMaterial color={'orange'} />
+                    <meshStandardMaterial color={'#777'} />
                 </mesh>
                 <mesh ref={cubeRef} rotation-y={Math.PI * .25} position-x={2} scale={1.5}>
                     <boxGeometry />
-                    <meshStandardMaterial color={'mediumpurple'} />
+                    <meshStandardMaterial color={'#555'} />
                 </mesh>
             </group>
 
             <mesh position-y={-1} rotation-x={-Math.PI * .5} scale={10}>
                 <planeGeometry />
-                <meshStandardMaterial color={'greenyellow'} />
+                <meshStandardMaterial color={'#333'} />
             </mesh>
         </>
     )

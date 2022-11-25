@@ -1,3 +1,4 @@
+import { StrictMode } from 'react'
 import { RouterProvider } from "react-router-dom"
 import { router } from "./router"
 import {
@@ -8,9 +9,11 @@ import './style/common.scss'
 
 const App = () => {
     return (
-        <RecoilRoot>
-            <RouterProvider router={router} />
-        </RecoilRoot>
+        <StrictMode>
+            <RecoilRoot>
+                <RouterProvider router={router} />
+            </RecoilRoot>
+        </StrictMode>
     )
 }
 

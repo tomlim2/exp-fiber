@@ -29,7 +29,7 @@ const CustomObject = () => {
                     array={positions}
                 />
             </bufferGeometry>
-            <meshStandardMaterial color={'greenyellow'} side={THREE.DoubleSide} />
+            <meshStandardMaterial color={'#09f'} side={THREE.DoubleSide} />
         </mesh>
     )
 
