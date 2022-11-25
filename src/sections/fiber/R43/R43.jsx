@@ -1,9 +1,16 @@
-const R42 = () =>{
+import { Canvas } from "@react-three/fiber"
+import FiberSectionWrapper from "sections/fiber/FiberSectionWrapper"
+import ExperienceR43 from "sections/fiber/R43/ExperienceR43"
+
+const R43 = () => {
     return (
-        <div style={{width:'100vw',height:'100vh'}}>
-            r43
-        </div>
+        <FiberSectionWrapper>
+            <Canvas>
+                <ExperienceR43/>
+            </Canvas>
+        </FiberSectionWrapper>
+
     )
 }
 
-export default R42
+export default R43

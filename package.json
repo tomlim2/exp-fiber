@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@react-three/drei": "9.32",
     "@react-three/fiber": "8.8",
     "axios": "^1.2.0",
     "firebase": "^9.14.0",
