@@ -1,6 +1,7 @@
 import { useRef } from "react"
 import { useState } from "react";
 import { useEffect } from "react"
+
 import "style/sections/fiber/fiber-section.scss"
 
 const FiberSectionWrapper = ({ children }) => {

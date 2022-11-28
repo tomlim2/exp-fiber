@@ -7,7 +7,6 @@ import ExperienceR44 from "sections/fiber/R44/ExperienceR44"
 const R44 = () => {
     return (
         <FiberSectionWrapper>
-            
             <Leva collapsed/>
             <Canvas>
                 <ExperienceR44/>
